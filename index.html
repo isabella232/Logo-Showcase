@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.3/glider.min.css"
+    />
+  </head>
+  <body>
+    <div class="logo-showcase-container">
+      <h2 class="logo-heading">You are in good company</h2>
+
+      <div class="logo-showcase">
+        <div class="logo">
+          <img src="images/google.png" alt="" />
+        </div>
+
+        <div class="logo">
+          <img src="images/intel.png" alt="" />
+        </div>
+
+        <div class="logo">
+          <img src="images/facebook.png" alt="" />
+        </div>
+
+        <div class="logo">
+          <img src="images/microsoft.png" alt="" />
+        </div>
+
+        <div class="logo">
+          <img src="images/nvidia.png" alt="" />
+        </div>
+      </div>
+
+      <div class="glider-prev"><img src="images/left-arrow.png" alt="" /></div>
+
+      <div class="glider-next"><img src="images/right-arrow.png" alt="" /></div>
+
+      <div class="dots"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/glider-js/1.7.3/glider.min.js"></script>
+
+    <script>
+      new Glider(document.querySelector(".logo-showcase"), {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        draggable: true,
+        dots: ".dots",
+        arrows: {
+          prev: ".glider-prev",
+          next: ".glider-next",
+        },
+      });
+    </script>
+  </body>
+</html>

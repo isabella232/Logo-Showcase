@@ -1,0 +1,40 @@
+.logo-showcase-container {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  max-width: 800px;
+  margin: 32px auto;
+  box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+.logo-showcase-container h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+  background: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.logo-showcase .logo {
+  display: flex;
+  align-items: center;
+  padding: 32px;
+}
+
+.logo-showcase img {
+  width: 100px;
+}
+
+.logo-showcase-container .glider-next,
+.logo-showcase-container .glider-prev {
+  position: absolute;
+  top: 156px;
+}
+
+.logo-showcase-container .glider-prev {
+  left: 8px;
+}
+
+.logo-showcase-container .glider-next {
+  right: 8px;
+}
